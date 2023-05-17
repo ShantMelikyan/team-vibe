@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "CustomFont";
+  src: url("/assets/font/Ballista.ttf");
+}
+html {
+  font-family: "CustomFont";
+  font-size: 16px;
+}
+
+body {
+  background-image: url(/assets/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 20px 5%;
+  z-index: -3;
+}
+
+/* shared main css  */
+
+.navbar:hover,
+.name:hover {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
+  transform: translate(0px, -1px);
+}
+.navbar,
+.name {
+  transition: box-shadow ease 4s;
+  transition: transform ease 0.8s;
+  transition-duration: 300ms;
+}
+
+/* ***************************** nav bar  *********************/
+
+.navbar {
+  /* glassmorphhism */
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(63, 63, 63, 0.39);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  margin-top: 70px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 0.7rem;
+  border-radius: 30px;
+
+  z-index: 1;
+  /* box-shadow: 0px 10px 20px 0px rgba(41, 41, 41, 0.5); */
+}
+
+.navbar:h {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
+  transform: translate(0px, -1px);
+}
+
+select {
+  border: 1px solid rgb(104, 99, 103);
+  line-height: 0;
+
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 2rem;
+  -moz-appearance: none; /* for Firefox */
+  -webkit-appearance: none; /* for Chrome */
+}
+select::-ms-expand {
+  display: none;
+}
+
+.seven24 {
+  position: relative;
+  display: none;
+}
+.logo img {
+  height: 180px;
+  /* margin-left: 40px; */
+}
+
+.social-icons a {
+  color: rgb(173, 116, 8);
+  font-size: 1.8rem;
+  margin-left: 15px;
+}
+.fa-instagram,
+.fa-telegram {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#df9902),
+    to(#4d390f88)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* logo border  */
+img {
+  -webkit-filter: drop-shadow(2px 2px 0 rgb(255, 188, 62))
+    drop-shadow(-2px -2px 0 rgba(43, 248, 255, 0.644));
+  filter: drop-shadow(2px 2px 0 rgb(255, 188, 62))
+    drop-shadow(-2px -2px 0 rgba(43, 248, 255, 0.644));
+}
+/* logo RGB light */
+:root {
+  --gradient-shadow: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+}
+.shadow {
+  height: 54px;
+  margin-left: 40px;
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.shadow:before,
+.shadow:after {
+  content: "";
+  position: absolute;
+  background: var(--gradient-shadow);
+  background-size: 600%;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  z-index: -1;
+  animation: animate 15s linear infinite;
+}
+
+.shadow:after {
+  filter: blur(20px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    /* speed of the rgb */
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* ***************************** nav bar end *********************/
+
+/* Club name  */
+
+.name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(63, 63, 63, 0.39);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  text-align: center;
+  height: 90px;
+  border-radius: 30px;
+  position: absolute;
+  width: calc(100vw - 10%);
+  z-index: -1;
+}
+.sportsclub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.name h1 {
+  font-size: 1.7rem;
+  color: #df9902e5;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px rgba(166, 255, 0, 0.726), 0 0 102px rgb(208, 255, 0),
+    0 0 151px rgb(255, 230, 0);
+  color: #fffbf0;
+}
+
+.name h2 {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+  letter-spacing: 7px;
+  font-size: 0.7rem;
+  color: #fffbf0;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px rgba(166, 255, 0, 0.726), 0 0 102px rgb(208, 255, 0),
+    0 0 151px rgb(255, 230, 0);
+}
+
+@media (min-width: 576px) {
+  .seven24 {
+    display: inline;
+  }
+}
