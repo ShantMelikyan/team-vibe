@@ -218,7 +218,7 @@ select::-ms-expand {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50dvh;
+  height: 50vh;
   font-size: 0.7rem;
 
   overflow: hidden;
@@ -239,7 +239,7 @@ select::-ms-expand {
 /************** info ****************/
 
 .info{
-    height: 60dvh;
+    height: 60vh;
 }
 
 
