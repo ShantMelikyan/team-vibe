@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url("assets/background.svg");
+  background-image: url("/assets/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,13 +27,13 @@ body {
 
 .navbar:hover,
 .name:hover,
-.pictures:hover {
+.pictures:hover, .info:hover, footer:hover{
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.4);
   transform: translate(0px, -1px);
 }
 .navbar,
 .name,
-.pictures {
+.pictures, .info, footer{
   /* transition: box-shadow ease 3s; */
   transition: box-shadow ease 0.8s, transform ease 0.8s;
   transition-duration: 300ms;
@@ -42,6 +42,8 @@ body {
   -webkit-backdrop-filter: blur(9px) saturate(200%);
   background-color: rgba(63, 63, 63, 0.39);
   border: 1px solid rgba(255, 255, 255, 0.37);
+  border-radius: 30px;
+  margin-top: 20px;
 }
 
 /* ***************************** nav bar  *********************/
@@ -54,7 +56,6 @@ body {
   justify-content: space-between;
   padding: 20px;
   font-size: 0.7rem;
-  border-radius: 30px;
 }
 
 select {
@@ -175,10 +176,9 @@ select::-ms-expand {
   justify-content: space-evenly;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
   letter-spacing: 15px;
-  margin-top: 20px;
+
   text-align: center;
   height: 90px;
-  border-radius: 30px;
 }
 .sportsclub {
   display: flex;
@@ -188,7 +188,8 @@ select::-ms-expand {
 }
 .seven24 {
   position: relative;
-  z-index: -3;
+  font-size: 1.3rem !important;
+  z-index: -2;
   display: none;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa !important;
@@ -202,7 +203,7 @@ select::-ms-expand {
 }
 
 .name h2 {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+  margin-top: 4px;
   letter-spacing: 7px;
   font-size: 0.7rem;
 }
@@ -211,28 +212,102 @@ select::-ms-expand {
 
 /* ***************************** main ***************************** */
 
-.pictures {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  margin-top: 20px;
+
+/************** picture ****************/
+.pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 50dvh;
   font-size: 0.7rem;
-  border-radius: 30px;
+
   overflow: hidden;
 }
 .mySlides {
-    height: 40dvh;
+  height: 40dvh;
   /* max-width: 70%; */
   margin: auto;
   display: none;
   border-radius: 30px;
 }
-.sign{
+.sign {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/************** picture end ****************/
 
-    margin-bottom: 20px;
+/************** info ****************/
+
+.info{
+    height: 60dvh;
+}
+
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+  
+  .tabcontent {
+    margin-top: 30px;
+    display: none;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }
+  
+  .contents {
+    margin-left: 30px;
+  }
+  
+  button {
+    font: inherit;
+    flex-basis: 50%;
+    border: solid 1px rgb(59, 59, 59);
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    height: 70px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    outline: 0;
+  }
+  
+  button.active {
+    background-color: rgba(147, 148, 148, 0.158);
+     /* Same as the parent's border radius */
+  }
+  .top-tab1,  .top-tab1.active{
+    border-top-left-radius: 30px;
+    
+  }
+  .top-tab2,   .top-tab2.active {
+    border-top-right-radius: 30px;
+  }
+
+
+/************** info end ****************/
+
+/************** footer ****************/
+footer{
+    padding: 10px;
+    height: 70px;
     text-align: center;
 }
+
+/************** footer end ****************/
+
 @media (min-width: 576px) {
   .seven24 {
     display: inline;
