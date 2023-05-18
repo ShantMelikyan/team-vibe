@@ -61,7 +61,7 @@ body {
 select {
   border: 1px solid rgb(104, 99, 103);
   line-height: 0;
-
+  background-image: url("assets/am.svg");
   width: 32px;
   height: 24px;
   border-radius: 4px;
@@ -170,6 +170,7 @@ select::-ms-expand {
 /* ***************************** Club name  ***************************** */
 
 .name {
+  
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -188,7 +189,7 @@ select::-ms-expand {
 }
 .seven24 {
   position: relative;
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   z-index: -2;
   display: none;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
@@ -203,7 +204,7 @@ select::-ms-expand {
 }
 
 .name h2 {
-  margin-top: 4px;
+  margin-top: 8px;
   letter-spacing: 7px;
   font-size: 0.7rem;
 }
@@ -224,7 +225,7 @@ select::-ms-expand {
   overflow: hidden;
 }
 .mySlides {
-  height: 40dvh;
+  height: 40vh;
   /* max-width: 70%; */
   margin: auto;
   display: none;
@@ -242,13 +243,11 @@ select::-ms-expand {
     height: 60vh;
 }
 
-
 .tabs {
     display: flex;
     flex-direction: column;
     
   }
-
 .tab {
     display: flex;
     flex-direction: row;

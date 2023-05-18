@@ -14,13 +14,27 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
+  <script>
+    const languages = ["Armenian", "English", "Russian"];
+    new vanilla_i18n(
+      languages,
+      (opts = {
+        path: "assets/vanilla-i18n",
+        debug: true,
+        i18n_attr_name: "vanilla-i18n",
+        toggler_id: "vanilla-i18n-toggler",
+        default_language: languages[1],
+      })
+    ).run();
+  </script>
   <body>
     <nav class="navbar">
       <div class="language">
-        <select>
-          <option value="AM">🇦🇲&emsp;</option>
-          <option value="EN">🇺🇸&emsp;</option>
-          <option value="RU">🇷🇺&emsp;</option>
+        <select class="language-select" id="vanilla-i18n-toggler">
+          <option class="am-option">Armenian</option>
+          <option class="en-option">English</option>
+          <option class="ru-option">Russian</option>
         </select>
       </div>
       <div class="logo">
@@ -49,7 +63,7 @@
       <div class="pictures">
         <div class="pic-container">
           <div class="sign">
-            <h2>barev</h2>
+            <i18n vanilla-i18n="form.greeting"></i18n>
           </div>
           <div class="picture-slider">
             <img class="mySlides" src="assets/room1.jpg" />
@@ -82,7 +96,7 @@
                   class="tablinks bottom-tab"
                   onclick="openTab(event, 'tab4')"
                 >
-                Tut chto?
+                  Tut chto?
                 </button>
               </div>
 
@@ -97,7 +111,6 @@
 
                 <div id="tab3" class="tabcontent">
                   <h3>Tut Chto?</h3>
-                  
                 </div>
                 <div id="tab4" class="tabcontent">
                   <h3>Tut Chto?</h3>
