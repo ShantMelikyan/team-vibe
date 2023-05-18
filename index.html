@@ -13,21 +13,21 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
+    <script>
+      const languages = ["Armenian", "English", "Russian"];
+      new vanilla_i18n(
+        languages,
+        (opts = {
+          path: "assets/vanilla-i18n",
+          debug: true,
+          i18n_attr_name: "vanilla-i18n",
+          toggler_id: "vanilla-i18n-toggler",
+          default_language: languages[0],
+        })
+      ).run();
+    </script>
   </head>
-  <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
-  <script>
-    const languages = ["Armenian", "English", "Russian"];
-    new vanilla_i18n(
-      languages,
-      (opts = {
-        path: "assets/vanilla-i18n",
-        debug: true,
-        i18n_attr_name: "vanilla-i18n",
-        toggler_id: "vanilla-i18n-toggler",
-        default_language: languages[1],
-      })
-    ).run();
-  </script>
   <body>
     <nav class="navbar">
       <div class="language">
@@ -63,7 +63,7 @@
       <div class="pictures">
         <div class="pic-container">
           <div class="sign">
-            <i18n vanilla-i18n="form.greeting"></i18n>
+            <i18n vanilla-i18n="form.greeting">Hello</i18n>
           </div>
           <div class="picture-slider">
             <img class="mySlides" src="assets/room1.jpg" />
