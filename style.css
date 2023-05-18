@@ -313,6 +313,7 @@ button.active {
   padding: 0 20%;
 }
 #map {
+  overflow: hidden;
   margin-top: 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
