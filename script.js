@@ -18,20 +18,24 @@ function carousel() {
 // info tabs show
 
 function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    // remove tab description
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].classList.remove("active");
-    }
-    // remove active tab
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active");
-    }
-    document.getElementById(tabName).classList.add("active");
-    evt.currentTarget.classList.add("active");
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+    tabcontent[i].style.height = 0; // Set height to 0 when closing
   }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  var selectedTab = document.getElementById(tabName);
+  selectedTab.classList.add("active");
+  selectedTab.style.height = selectedTab.scrollHeight + "px"; // Set height to the actual content height
+
+  evt.currentTarget.classList.add("active");
+}
 
 
   // language icon change

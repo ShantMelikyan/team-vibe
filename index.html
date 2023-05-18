@@ -19,7 +19,7 @@
       new vanilla_i18n(
         languages,
         (opts = {
-          path: "vanilla-i18n/",
+          path: "assets/vanilla-i18n/",
           debug: true,
           i18n_attr_name: "vanilla-i18n",
           toggler_id: "vanilla-i18n-toggler",
@@ -81,39 +81,41 @@
                   class="tablinks active top-tab1"
                   onclick="openTab(event, 'tab1')"
                 >
-                  About Us
+                  <i18n vanilla-i18n="form.about"></i18n>
                 </button>
                 <button
                   class="tablinks top-tab2"
                   onclick="openTab(event, 'tab2')"
                 >
-                  Contacts
+                  <i18n vanilla-i18n="form.contact"></i18n>
                 </button>
                 <button class="tablinks" onclick="openTab(event, 'tab3')">
-                  Tut chto?
+                  <i18n vanilla-i18n="form.hardware"></i18n>
                 </button>
                 <button
                   class="tablinks bottom-tab"
                   onclick="openTab(event, 'tab4')"
                 >
-                  Tut chto?
+                  <i18n vanilla-i18n="form.price"></i18n>
                 </button>
               </div>
 
               <div class="contents">
                 <div id="tab1" class="tabcontent active">
-                  <h3>About the club</h3>
+                  <i18n vanilla-i18n="form.about-content"></i18n>
                 </div>
 
                 <div id="tab2" class="tabcontent">
-                  <h3>Contact info</h3>
+                  <i18n vanilla-i18n="form.contact-content"></i18n>
                 </div>
 
                 <div id="tab3" class="tabcontent">
-                  <h3>Tut Chto?</h3>
+                  <i18n vanilla-i18n="form.hardware-content"></i18n>
+                  <i18n vanilla-i18n="form.hardware-standard"></i18n>
+                  <i18n vanilla-i18n="form.hardware-vip"></i18n>
                 </div>
                 <div id="tab4" class="tabcontent">
-                  <h3>Tut Chto?</h3>
+                  <i18n vanilla-i18n="form.price-content"></i18n>
                 </div>
               </div>
             </div>

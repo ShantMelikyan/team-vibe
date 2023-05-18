@@ -1,0 +1,16 @@
+{
+  "language": "Language",
+  "form": {
+    "greeting": "Hello!",
+    "about": "About Us",
+    "about-content": "We offer powerful PCs and high-quality peripherals for complete immersion in cyberspace. Regardless of your level, TeamVibe is the perfect place to develop your gaming skills. <br/> <br/> You have an opportunity to play at anytime of the day! We want to be available to you at any convenient time. So, if you are also an owl, like us, TeamVibe is always ready to welcome you. <br/> <br/>Don't forget to visit our bar for drinks and snacks. Our administrators are always ready to help you with any questions at any time.",
+    "contact": "Contact",
+    "contact-content": "+374 91 420 344 <br/> Avetik Isahakyan, 14 <br/> Working hours: 24/7 <br/> Email: info@teamvibe.am",
+    "hardware": "Hardware",
+    "hardware-content": "- 32 GB RAM <br/>- GRAFIC CARD GEFORCE RTX 3060 DUAL <br/>- INTEL CORE i5-12400<br/>- ARMENIA\u2019S FIRST DISKLESS SYSTEM <br/><br/>",
+    "hardware-standard": "STANDARD PC KIT <br/><br/> HYPERX AllOY ORIGINS CORE \u2014keyboard <br/>LOGITECH G203 \u2014 mouse <br/>LOGITECH 432 \u2014 headset <br/>DELL 27 CURVED GAMING MONITOR 144Hz \u2014 monitor <br/>Aero cool knight \u2014 chair<br/>",
+    "hardware-vip": "<br/>VIP<br/><br/>RAZER BLACKWIDOW v3 TENKEYLESS  \u2014  KEYBOARD <br/>RAZER MAMBA ELITE \u2014 mouse<br/>HYPER X CLOUD || \u2014 headset <br/>HYPER X ARMADA 27 QHD 165 Hz \u2014 monitor  <br/>THUNDER X3 \u2014 chair<br/>",
+    "price": "Price List",
+    "price-content": "PC<br/>600 AMD/h 8:00 \u2013 17:00 (Monday-Friday)<br/>800 AMD/hour 17:00 \u2013 8:00<br/><br/>Standard Package<br/>2 hours - 1500 AMD<br/>3 hours - 2200 AMD<br/>5 hours \u2013 3600 AMD<br/><br/>Standard night package<br/>4000 AMD 0:00 \u2013 8:00<br/><br/>VIP\n1400 AMD/h 8:00 \u2013 17:00 (Monday-Friday)<br/>1600 AMD/hour 17:00 \u2013 8:00<br/><br/>VIP package<br/>2 hours AMD 3100 3 hours AMD 4600 5 hours AMD 7400<br/><br/>Night VIP package<br/>8000 AMD 0:00 \u2013 8:00<br/><br/>*Packages are available from 17:00 to 08:00<br/><br/>PS5<br/>standard<br/>1400 AMD/h"
+  }
+}
