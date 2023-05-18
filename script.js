@@ -34,7 +34,7 @@ function openTab(evt, tabName) {
 
   var selectedTab = document.getElementById(tabName);
   selectedTab.classList.add("active");
-  selectedTab.style.height = selectedTab.scrollHeight + "0px"; // Set height to the actual content height
+  selectedTab.style.height = selectedTab.scrollHeight + "px"; // Set height to the actual content height
 
   evt.currentTarget.classList.add("active");
 }
@@ -82,7 +82,6 @@ function initMap() {
   });
   map.setOptions({
     zoomControl: false,
-    // gestureHandling: "none",
     fullscreenControl: false,
   });
   const icon = {

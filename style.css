@@ -318,8 +318,9 @@ button.active {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 475px;
+  z-index: -1;
 }
-#map >div{
+#map > div{
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
