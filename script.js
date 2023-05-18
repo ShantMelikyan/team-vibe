@@ -87,7 +87,7 @@ function initMap() {
   });
   const icon = {
     url: "/assets/logo.png", // url
-    scaledSize: new google.maps.Size(41, 50), // scaled size
+    scaledSize: new google.maps.Size(42, 50), // scaled size
     origin: new google.maps.Point(0, 0), // origin
     anchor: new google.maps.Point(0, 0), // anchor
   };
@@ -98,7 +98,7 @@ function initMap() {
     icon: icon,
     label: {
       fontSize: "8pt",
-      // text: "TV",
+      text: "TV",
     },
   });
 }

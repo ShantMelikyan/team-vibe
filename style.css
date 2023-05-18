@@ -198,8 +198,7 @@ select::-ms-expand {
   font-size: 1rem !important;
   z-index: -2;
   display: none;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa !important;
+
   color: #fffbf0;
 }
 
@@ -304,12 +303,21 @@ button.active {
 .top-tab2.active {
   border-top-right-radius: 30px;
 }
-
+#tab1{
+  margin-top: 20px;
+}
+#tab2, #tab3, #tab4{
+  margin-top: 0;
+}
 #tab1, #tab3, #tab4{
-  overflow: hidden;
   padding: 0 20%;
 }
-
+#map {
+  margin-top: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 475px;
+}
 /************** info end ****************/
 
 /************** footer ****************/
@@ -319,15 +327,6 @@ footer {
   text-align: center;
 }
 
-.map-container{
-  margin-top: 20px;
-  border-radius: 30px;
-  height:400px;
-  padding: 0 !important;
-}
-#map {
-  height: 100%;
-}
 /************** footer end ****************/
 
 @media (min-width: 576px) {
