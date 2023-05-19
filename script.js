@@ -79,6 +79,7 @@ function initMap() {
     styles: styles,
     streetViewControl: false,
     mapTypeControl: false,
+    keyboardShortcuts: false,
   });
   map.setOptions({
     zoomControl: false,

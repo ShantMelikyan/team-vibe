@@ -47,7 +47,7 @@ footer {
   background-color: rgba(63, 63, 63, 0.39);
   border: 1px solid rgba(255, 255, 255, 0.37);
   border-radius: 30px;
-  margin-top: 20px !important;
+  margin-top: 30px !important;
   max-width: 870px;
   margin: auto;
 }
@@ -81,15 +81,14 @@ select::-ms-expand {
 
 .logo img {
   height: 130px;
-  /* margin-left: 40px; */
 }
 
-.social-icons a {
-  color: #f29f37;
-  font-size: 1.8rem;
-  margin-left: 15px;
+.social-icons img {
+  /* color: #f29f37; */
+  height: 30px;
+  margin-left: 10px;
 }
-.fa-instagram,
+/* .fa-instagram,
 .fa-telegram {
   background: -webkit-gradient(
     linear,
@@ -100,7 +99,7 @@ select::-ms-expand {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 /* logo border  */
 .logo img {
@@ -113,16 +112,6 @@ select::-ms-expand {
 :root {
   --gradient-shadow: linear-gradient(
     45deg,
-    /* #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000 */
       #d7be8e,
     #83c2c7,
     #40aead,
@@ -224,7 +213,6 @@ select::-ms-expand {
   justify-content: center;
   height: 50vh;
   font-size: 0.7rem;
-
   overflow: hidden;
 }
 .mySlides {
@@ -243,7 +231,7 @@ select::-ms-expand {
 /************** info ****************/
 
 .info {
-  height: 720px;
+  height: 650px;
 }
 
 .tabs {
@@ -319,7 +307,7 @@ button.active {
   margin-top: 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  height: 475px;
+  height: 400px;
   z-index: 0;
 }
 #map > div {
