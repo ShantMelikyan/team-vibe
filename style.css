@@ -29,7 +29,7 @@ body {
   background-image: url("assets/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   /* background-size: round; */
   margin: 20px 5%;
