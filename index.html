@@ -20,7 +20,7 @@
         languages,
         (opts = {
           path: "assets/vanilla-i18n/",
-          debug: true,
+          debug: false,
           i18n_attr_name: "vanilla-i18n",
           toggler_id: "vanilla-i18n-toggler",
           default_language: languages[1],
@@ -81,48 +81,48 @@
       <div class="info">
         <div class="tabs">
           <div class="tab">
-            <!-- about -->
+            <!-- contact -->
             <button
               class="tablinks active top-tab1"
               onclick="openTab(event, 'tab1')"
             >
-              <a href="#info"></a>
-              <i18n vanilla-i18n="form.about"></i18n>
-            </button>
-            <!-- contact -->
-            <button class="tablinks top-tab2" onclick="openTab(event, 'tab2')">
               <a href="#info"><i18n vanilla-i18n="form.contact"></i18n></a>
             </button>
+            <!-- about -->
+            <button class="tablinks top-tab2" onclick="openTab(event, 'tab2')">
+              <a href="#info"> <i18n vanilla-i18n="form.about"></i18n></a>
+            </button>
+
             <!-- hardware -->
 
             <button class="tablinks" onclick="openTab(event, 'tab3')">
               <a href="#info"><i18n vanilla-i18n="form.hardware"></i18n></a>
             </button>
             <!-- prices -->
-            <button
+            </ahref><button
               class="tablinks bottom-tab"
               onclick="openTab(event, 'tab4')"
-            >
+            > 
               <a href="#info"><i18n vanilla-i18n="form.price"></i18n></a>
+              
             </button>
           </div>
 
           <div class="contents">
-            <!-- about -->
-            <div id="tab1" class="tabcontent active">
-              <div class="pad">
-                <i18n vanilla-i18n="form.about-content"></i18n>
-              </div>
-            </div>
             <!-- contact -->
-            <div id="tab2" class="tabcontent">
+            <div id="tab1" class="tabcontent active">
               <a href="tel:+37491420344" class="vibrate">+374 91 420 344</a>
               <i18n vanilla-i18n="form.contact-content"></i18n>
               <div class="wrapper">
-                <!-- <img src="assets/map.png" alt=""> -->
                 <div class="map-container">
                   <div id="map">map</div>
                 </div>
+              </div>
+            </div>
+            <!-- about -->
+            <div id="tab2" class="tabcontent">
+              <div class="pad">
+                <i18n vanilla-i18n="form.about-content"></i18n>
               </div>
             </div>
             <!-- hardware -->
@@ -133,7 +133,7 @@
                 <i18n vanilla-i18n="form.hardware-vip"></i18n>
               </div>
             </div>
-             <!-- prices -->
+            <!-- prices -->
             <div id="tab4" class="tabcontent">
               <div class="pad">
                 <i18n vanilla-i18n="form.price-content"></i18n>

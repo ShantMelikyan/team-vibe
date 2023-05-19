@@ -22,17 +22,19 @@ html {
   font-family: "Ballista";
   font-size: 16px;
   color: white;
+ 
 }
 
 body {
-  overflow: auto;
   background-image: url("assets/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  /* background-size: round; */
   margin: 20px 5%;
   z-index: -3;
+ 
 }
 
 /* shared main css  */
@@ -50,7 +52,7 @@ footer:hover {
 .pictures,
 .info,
 footer {
-
+ 
   /* transition: box-shadow ease 3s; */
   transition: box-shadow ease 0.8s, transform ease 0.8s;
   transition-duration: 300ms;
@@ -298,7 +300,7 @@ button.active {
 #tab4 {
   margin-top: 0;
 }
-#tab1,
+#tab2,
 #tab3,
 #tab4 {
   padding: 0 20%;
