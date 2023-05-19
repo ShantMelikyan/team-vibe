@@ -83,8 +83,7 @@ select::-ms-expand {
   height: 130px;
 }
 
-.social-icons img {
-  /* color: #f29f37; */
+.social-icons img, footer img {
   height: 30px;
   margin-left: 10px;
 }
@@ -148,7 +147,7 @@ select::-ms-expand {
 
 /* ***************************** nav bar end *********************/
 
-/* ***************************** Club name  ***************************** */
+/* ***************************** Club name  ******************** */
 
 .name {
   display: flex;
@@ -216,7 +215,7 @@ select::-ms-expand {
 /************** info ****************/
 
 .info {
-  height: 750px;
+  /* height: 750px; */
 }
 
 .tabs {
@@ -244,8 +243,8 @@ select::-ms-expand {
   font-size: 0.9rem;
 }
 a {
-  /* text-decoration: none;
-  color: inherit !important; */
+  /* text-decoration: none;*/
+  color: inherit !important; 
 }
 
 .tabcontent.active {
@@ -253,20 +252,15 @@ a {
   transition: height 0.5s ease;
 }
 
-.contents {
-  margin-top: 10px;
-}
-
 button {
   font: inherit;
   flex-basis: 50%;
-  border: solid 1px rgb(59, 59, 59);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   background-color: transparent;
   padding: 10px;
   height: 70px;
   cursor: pointer;
-  font-size: 0.7rem;
   outline: 0;
 }
 
@@ -283,7 +277,7 @@ button.active {
   border-top-right-radius: 30px;
 }
 #tab1 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #tab2,
 #tab3,
@@ -294,19 +288,24 @@ button.active {
 #tab3,
 #tab4 {
   padding: 0 20%;
+  /* padding-bottom: 20px; */
+}
+.pad{
+  padding-bottom: 30px;
 }
 #map {
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  height: 503px;
+  height: 501px;
   z-index: 0;
+ 
 }
-#map > div {
+/* #map > div {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-}
+} */
 /************** info end ****************/
 
 /************** footer ****************/
