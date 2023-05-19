@@ -44,15 +44,19 @@ const selectElement = document.querySelector(".language-select");
 const svgElement = document.querySelector("select");
 
 selectElement.addEventListener("change", function () {
+  var htmlElement = document.getElementsByTagName("html")[0];
   const selectedOption = selectElement.options[selectElement.selectedIndex];
 
   // Update the background-image based on the selected option's class
   if (selectedOption.classList.contains("am-option")) {
     svgElement.style.backgroundImage = 'url("assets/am.svg")';
+    htmlElement.style.fontFamily = "SosGro";
   } else if (selectedOption.classList.contains("en-option")) {
     svgElement.style.backgroundImage = 'url("assets/gb.svg")';
+    htmlElement.style.fontFamily = "Ballista";
   } else if (selectedOption.classList.contains("ru-option")) {
     svgElement.style.backgroundImage = 'url("assets/ru.svg")';
+    htmlElement.style.fontFamily = "Days2";
   }
 });
 
