@@ -29,11 +29,12 @@ body {
   background-image: url("assets/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   /* background-size: round; */
   margin: 20px 5%;
   z-index: -3;
+  min-height: 100vh;
  
 }
 
@@ -230,7 +231,8 @@ select::-ms-expand {
 /************** info ****************/
 
 .info {
-  /* height: 750px; */
+  height: auto;
+  width: auto;
 }
 
 .tabs {
@@ -253,20 +255,21 @@ select::-ms-expand {
   text-align: center;
   font-size: 0.9rem;
   transition: height 0.5s ease;
-}
-.tablinks {
-  font-size: 0.9rem;
-}
-a {
-  /* text-decoration: none;*/
-  color: inherit !important; 
+ 
 }
 
 .tabcontent.active {
   height: auto;
   transition: height 0.5s ease;
 }
+.tablinks {
+  font-size: 0.9rem;
+}
 
+.tabs a {
+  /* text-decoration: none; */
+  color: inherit !important; 
+}
 button {
   font: inherit;
   flex-basis: 50%;
