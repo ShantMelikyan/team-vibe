@@ -17,6 +17,15 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 // info tabs show
 
 function openTab(evt, tabName) {

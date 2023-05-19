@@ -274,6 +274,7 @@ button {
   height: 70px;
   cursor: pointer;
   outline: 0;
+  transition: 0.5s;
 }
 
 button.active {

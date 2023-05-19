@@ -48,7 +48,8 @@
       </div>
       <div class="social-icons">
         <a href="https://www.instagram.com/teamvibe_evn/">
-          <img src="assets/instagram.png" alt="instagram icon"/></a>
+          <img src="assets/instagram.png" alt="instagram icon"
+        /></a>
         <a href="https://www.instagram.com/shaaaaant">
           <img src="assets/telegram.png" alt="telegram icon" />
         </a>
@@ -74,73 +75,81 @@
             <img class="mySlides" src="assets/room3.jpg" />
           </div>
         </div>
+        <div id="info"></div>
       </div>
 
       <div class="info">
-        <div class="info-container">
-          <section id="work">
-            <div class="tabs">
-              <div class="tab">
-                <button
-                  class="tablinks active top-tab1"
-                  onclick="openTab(event, 'tab1')"
-                >
-                  <i18n vanilla-i18n="form.about"></i18n>
-                </button>
-                <button
-                  class="tablinks top-tab2"
-                  onclick="openTab(event, 'tab2')"
-                >
-                  <i18n vanilla-i18n="form.contact"></i18n>
-                </button>
-                <button class="tablinks" onclick="openTab(event, 'tab3')">
-                  <i18n vanilla-i18n="form.hardware"></i18n>
-                </button>
-                <button
-                  class="tablinks bottom-tab"
-                  onclick="openTab(event, 'tab4')"
-                >
-                  <i18n vanilla-i18n="form.price"></i18n>
-                </button>
+        <div class="tabs">
+          <div class="tab">
+            <!-- about -->
+            <button
+              class="tablinks active top-tab1"
+              onclick="openTab(event, 'tab1')"
+            >
+              <a href="#info"></a>
+              <i18n vanilla-i18n="form.about"></i18n>
+            </button>
+            <!-- contact -->
+            <button class="tablinks top-tab2" onclick="openTab(event, 'tab2')">
+              <a href="#info"><i18n vanilla-i18n="form.contact"></i18n></a>
+            </button>
+            <!-- hardware -->
+
+            <button class="tablinks" onclick="openTab(event, 'tab3')">
+              <a href="#info"><i18n vanilla-i18n="form.hardware"></i18n></a>
+            </button>
+            <!-- prices -->
+            <button
+              class="tablinks bottom-tab"
+              onclick="openTab(event, 'tab4')"
+            >
+              <a href="#info"><i18n vanilla-i18n="form.price"></i18n></a>
+            </button>
+          </div>
+
+          <div class="contents">
+            <!-- about -->
+            <div id="tab1" class="tabcontent active">
+              <div class="pad">
+                <i18n vanilla-i18n="form.about-content"></i18n>
               </div>
-
-              <div class="contents">
-                <div id="tab1" class="tabcontent active">
-                  <div class="pad"> <i18n vanilla-i18n="form.about-content"></i18n></div>
-                </div>
-
-                <div id="tab2" class="tabcontent">
-                  <a href="tel:+37491420344" class="vibrate "></a>+374 91 420 344</a>
-                  <i18n vanilla-i18n="form.contact-content"></i18n>
-                  <div class="wrapper">
-                    <!-- <img src="assets/map.png" alt=""> -->
-                    <div class="map-container">
-                      <div id="map">map</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="tab3" class="tabcontent">
-                
-                  <i18n vanilla-i18n="form.hardware-content"></i18n>
-                  <i18n vanilla-i18n="form.hardware-standard"></i18n> 
-                  <div class="pad"><i18n vanilla-i18n="form.hardware-vip"></i18n></div>
-                  
-                </div>
-                <div id="tab4" class="tabcontent">
-                  <div class="pad"> <i18n vanilla-i18n="form.price-content"></i18n></div>
+            </div>
+            <!-- contact -->
+            <div id="tab2" class="tabcontent">
+              <a href="tel:+37491420344" class="vibrate">+374 91 420 344</a>
+              <i18n vanilla-i18n="form.contact-content"></i18n>
+              <div class="wrapper">
+                <!-- <img src="assets/map.png" alt=""> -->
+                <div class="map-container">
+                  <div id="map">map</div>
                 </div>
               </div>
             </div>
-          </section>
+            <!-- hardware -->
+            <div id="tab3" class="tabcontent">
+              <i18n vanilla-i18n="form.hardware-content"></i18n>
+              <i18n vanilla-i18n="form.hardware-standard"></i18n>
+              <div class="pad">
+                <i18n vanilla-i18n="form.hardware-vip"></i18n>
+              </div>
+            </div>
+             <!-- prices -->
+            <div id="tab4" class="tabcontent">
+              <div class="pad">
+                <i18n vanilla-i18n="form.price-content"></i18n>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <a href="https://www.instagram.com/teamvibe_evn/">
-        <img src="assets/instagram.png" alt="instagram icon"/></a>
+        <img src="assets/instagram.png" alt="instagram icon"
+      /></a>
       <a href="https://www.instagram.com/shaaaaant">
-        <img src="assets/telegram.png" alt="telegram icon" />
+        <img src="assets/telegram.png" alt="telegram icon"
+      /></a>
     </footer>
     <script src="script.js"></script>
 
