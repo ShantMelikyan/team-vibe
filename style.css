@@ -218,9 +218,12 @@ footer img {
   border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* .free-slots{
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-} */
+.free-slots{
+  color: #0b7236;
+}
+.busy-slots{
+  color: rgb(158, 44, 44);
+}
 
 
 /* ***************************** Club name  end ***************************** */
