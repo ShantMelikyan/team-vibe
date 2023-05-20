@@ -357,6 +357,17 @@ button.active {
   height: 501px;
   z-index: 0;
 }
+#myLocationId {
+  border-radius: 20px;
+  height: 55px;
+  width: 55px;
+position: absolute;
+border-color: rgba(255, 255, 255, 0.068);
+background-color: rgba(63, 63, 63, 0.5);
+z-index: 200;
+bottom: 20px;
+right: 20px;
+}
 
 /************** info end ****************/
 

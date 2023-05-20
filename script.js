@@ -87,12 +87,7 @@ function initMap() {
     // origin: new google.maps.Point(0, 0), // origin
     // anchor: new google.maps.Point(0, 0), // anchor
   };
-  const myLocationIcon = {
-    url: "/assets/crosshair.png", // url
-    scaledSize: new google.maps.Size(50, 50), // scaled size
-    // origin: new google.maps.Point(0, 0), // origin
-    // anchor: new google.maps.Point(0, 0), // anchor
-  };
+ 
   new google.maps.Marker({
     position: myLatLng,
     map,
@@ -103,6 +98,47 @@ function initMap() {
       text: "TV",
     },
   });
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     var pos = {
+  //       lat: position.coords.latitude,
+  //       lng: position.coords.longitude
+  //     };
+
+  //     // Set the map center to the current location
+  //     map.setCenter(pos);
+
+  //     // Create a marker at the current location
+  //     let marker = new google.maps.Marker({
+  //       position: pos,
+  //       map: map,
+  //       icon: myLocationIcon,
+  //     });
+  //   }, function() {
+  //     handleLocationError(true, map.getCenter());
+  //   });
+  // }
+
+ // Declare the marker variable outside the scope of the getCurrentPosition function
+
+
+
+}
+
+
+// Get a reference to the button element
+let button = document.getElementById("myLocationId");
+
+
+// Add a click event listener to the button
+button.addEventListener("click", function() {
+  let marker;
+  const myLocationIcon = {
+    url: "/assets/crosshair.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    // origin: new google.maps.Point(0, 0), // origin
+    // anchor: new google.maps.Point(0, 0), // anchor
+  };
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = {
@@ -114,7 +150,7 @@ function initMap() {
       map.setCenter(pos);
 
       // Create a marker at the current location
-      let marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
         position: pos,
         map: map,
         icon: myLocationIcon,
@@ -123,7 +159,6 @@ function initMap() {
       handleLocationError(true, map.getCenter());
     });
   }
+});
 
-
-}
 window.initMap = initMap;
