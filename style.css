@@ -361,12 +361,12 @@ button.active {
   border-radius: 20px;
   height: 55px;
   width: 55px;
-position: absolute;
-border-color: rgba(255, 255, 255, 0.068);
-background-color: rgba(63, 63, 63, 0.5);
+position: relative;
+border-color: rgba(255, 255, 255, 0.158);
+background-color: rgba(49, 49, 49, 0.39);
 z-index: 200;
-bottom: 20px;
-right: 20px;
+top:510px;
+left: 290px;
 }
 
 /************** info end ****************/
