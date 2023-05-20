@@ -359,7 +359,7 @@ button.active {
   display: flex;
   overflow: hidden;
   min-height: -webkit-fill-available;
-  max-height: 1200px;
+  /* max-height: 1200px; */
 }
 .slideshow {
   margin: 0 auto;
@@ -432,5 +432,8 @@ footer a {
   }
   #tab2 {
     padding: 0 20% !important;
+  }
+  .pictures{
+    max-height: 1180px;
   }
 }
