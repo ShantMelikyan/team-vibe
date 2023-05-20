@@ -361,7 +361,7 @@ button.active {
   display: flex;
   overflow: hidden;
   min-height: -webkit-fill-available;
-  max-height: 1200px;
+  max-height: 800px;
 }
 .slideshow {
   margin: 0 auto;
