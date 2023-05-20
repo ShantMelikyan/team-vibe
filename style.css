@@ -360,6 +360,7 @@ button.active {
 .pictures {
   display: flex;
   overflow: hidden;
+  
 }
 .slideshow {
   margin: 0 auto;
@@ -367,14 +368,16 @@ button.active {
   position: relative;
 }
 .slideshow img {
+  object-fit: fill;
   float: left;
-  height: 610px;
+  max-height: 100%;
+  max-width: 100%;
 }
 #prev,
 #next {
   position: absolute;
   z-index: 350;
-  top: 200px;
+  top: 48%;
   width: 50px;
   height: 50px;
   text-indent: -9999px;
