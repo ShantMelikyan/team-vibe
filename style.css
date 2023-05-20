@@ -79,7 +79,7 @@ footer, .slots{
 }
 
 select {
-  border: 1px solid rgb(104, 99, 103);
+  border: 1px solid rgba(255, 255, 255, 0.37);
   line-height: 0;
   background-image: url("assets/am.svg");
   width: 32px;
@@ -88,6 +88,9 @@ select {
   font-size: 1.1rem;
   -moz-appearance: none; /* for Firefox */
   -webkit-appearance: none; /* for Chrome */
+  background: rgba(63, 63, 63, 1);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 select::-ms-expand {
   display: none;
@@ -165,6 +168,8 @@ footer img {
 
 /* ***************************** Club name  ******************** */
 
+
+
 .name {
   font-family: "Ballista" !important;
   display: flex;
@@ -210,6 +215,7 @@ footer img {
   align-content: center;
 }
 .flex-item{
+  
   flex: 1 1 auto;
     position: relative;
     text-align: center;
@@ -219,9 +225,11 @@ footer img {
 }
 
 .free-slots{
+  font-family: "Ballista";
   color: #0b7236;
 }
 .busy-slots{
+  font-family: "Ballista";
   color: rgb(158, 44, 44);
 }
 

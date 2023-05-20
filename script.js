@@ -57,8 +57,9 @@ let map;
 
 // populate styles array with styles from 'styles.json'
 
-//load map styles from json
+
 function initMap() {
+  //load map styles from json
   let styles = [];
   $.ajax({
     dataType: "json",
@@ -77,16 +78,20 @@ function initMap() {
     streetViewControl: false,
     mapTypeControl: false,
     keyboardShortcuts: false,
-  });
-  map.setOptions({
-    zoomControl: false,
+     zoomControl: false,
     fullscreenControl: false,
   });
   const icon = {
     url: "/assets/logo.png", // url
     scaledSize: new google.maps.Size(42, 50), // scaled size
-    origin: new google.maps.Point(0, 0), // origin
-    anchor: new google.maps.Point(0, 0), // anchor
+    // origin: new google.maps.Point(0, 0), // origin
+    // anchor: new google.maps.Point(0, 0), // anchor
+  };
+  const myLocationIcon = {
+    url: "/assets/crosshair.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    // origin: new google.maps.Point(0, 0), // origin
+    // anchor: new google.maps.Point(0, 0), // anchor
   };
   new google.maps.Marker({
     position: myLatLng,
@@ -98,5 +103,27 @@ function initMap() {
       text: "TV",
     },
   });
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+
+      // Set the map center to the current location
+      map.setCenter(pos);
+
+      // Create a marker at the current location
+      let marker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        icon: myLocationIcon,
+      });
+    }, function() {
+      handleLocationError(true, map.getCenter());
+    });
+  }
+
+
 }
 window.initMap = initMap;
