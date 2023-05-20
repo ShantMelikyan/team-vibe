@@ -98,8 +98,9 @@ select::-ms-expand {
 
 .social-icons img,
 footer img {
+  /* padding: 0; */
   height: 30px;
-  margin-left: 10px;
+  /* margin-left: 1px; */
 }
 .logo img {
   -webkit-filter: drop-shadow(2px 2px 0 rgb(255, 188, 62))
@@ -205,25 +206,19 @@ footer img {
 /* ***************************** main ***************************** */
 
 /************** picture ****************/
-.pic-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  font-size: 0.7rem;
+.pictures {
+  /* padding-top: 30px; */
+  height: 600px;
   overflow: hidden;
 }
 .mySlides {
-  height: 40vh;
+  height: 620px;
   /* max-width: 70%; */
   margin: auto;
   display: none;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
-.sign {
-  margin-bottom: 20px;
-  text-align: center;
-}
+
 /************** picture end ****************/
 
 /************** info ****************/
@@ -257,8 +252,8 @@ footer img {
   height: auto;
   transition: height 0.5s ease;
 }
-.tablinks .tabcontent {
-  font-size: 0.9rem;
+.tablinks  {
+  font-size: 0.8rem;
 }
 
 .tabs a {
@@ -349,9 +344,18 @@ button.active {
 
 /************** footer ****************/
 footer {
-  padding-top: 20px;
+  flex-wrap: nowrap;
+  font-size: 0.6rem;
+  padding: 0 5%;
+  text-decoration: none;
+  color: inherit !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 70px;
   text-align: center;
+
 }
 
 /************** footer end ****************/
