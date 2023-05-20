@@ -1,4 +1,4 @@
-var myIndex = 0;
+let myIndex = 0;
 carousel();
 
 // image carousel slideshow
