@@ -400,8 +400,8 @@ footer {
   flex-wrap: nowrap;
   font-size: 0.8rem;
   padding: 0 5%;
-  text-decoration: none;
-  color: inherit !important;
+ 
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -409,7 +409,16 @@ footer {
   height: 70px;
   text-align: center;
 }
+.address{
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+}
 
+footer a{
+  color: white;
+  text-decoration: none; 
+}
 /************** footer end ****************/
 
 @media (min-width: 576px) {
