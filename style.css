@@ -71,20 +71,28 @@ footer,
 
 .navbar {
   margin-top: 40px;
-  height: 90px;
+  height: 90px; 
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  font-size: 0.7rem;
+  text-align:center;
+}
+.language,  .logo , .social-icons {
+  flex: 1 1 0;
+}
+.logo{
+  display: flex;
+  justify-content: center;
 }
 
 select {
-  border: 1px solid rgba(255, 255, 255, 0.37);
+  /* border: 1px solid rgb(100, 100, 100); */
+  border: none;
   line-height: 0;
   background-image: url("assets/am.svg");
-  width: 32px;
-  height: 24px;
+  width: 33px;
+  height: 23px;
   border-radius: 4px;
   font-size: 1.1rem;
   -moz-appearance: none; /* for Firefox */
@@ -103,9 +111,7 @@ select::-ms-expand {
 
 .social-icons img,
 footer img {
-  /* padding: 0; */
-  height: 30px;
-  /* margin-left: 1px; */
+  height: 35px;
 }
 .logo img {
   -webkit-filter: drop-shadow(2px 2px 0 rgb(255, 188, 62))
@@ -126,7 +132,7 @@ footer img {
 }
 .shadow {
   height: 60px;
-  margin-left: 45px;
+  /* margin-left: 45px; */
   width: 60px;
   display: flex;
   justify-content: center;
@@ -214,7 +220,7 @@ footer img {
   align-content: center;
 }
 .flex-item {
-  flex: 1 1 auto;
+  flex: 1 1 0;
   position: relative;
   text-align: center;
 }
