@@ -138,7 +138,7 @@ button.addEventListener("click", function () {
 button2.addEventListener("click", function () {
   const clubLatLng = { lat: 40.18537140704022, lng: 44.523966023346446 };
   // Set the map center to the current location
-  map.setZoom(16);
+  map.setZoom(17);
   map.setCenter(clubLatLng);
 });
 
