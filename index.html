@@ -1,203 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Vibe</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
-    <script>
-      const languages = ["Armenian", "English", "Russian"];
-      new vanilla_i18n(
-        languages,
-        (opts = {
-          path: "assets/vanilla-i18n/",
-          debug: false,
-          i18n_attr_name: "vanilla-i18n",
-          toggler_id: "vanilla-i18n-toggler",
-          default_language: languages[1],
-        })
-      ).run();
-    </script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="language">
-        <select class="language-select" id="vanilla-i18n-toggler">
-          <option class="am-option">Armenian</option>
-          <option class="en-option">English</option>
-          <option class="ru-option">Russian</option>
-        </select>
-      </div>
-      <div class="logo">
-        <div class="shadow">
-          <img src="assets/logo.png" alt="Logo" />
-        </div>
-      </div>
-      <div class="social-icons">
-        <a href="https://t.me/teamvibe_evn" target="_blank">
-          <img src="assets/tg2.png" alt="telegram icon"
-        /></a>
-        <a href="https://www.instagram.com/teamvibe_evn/" target="_blank">
-          <img src="assets/ig2.png" alt="instagram icon"
-        /></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100092512521095&mibextid=LQQJ4d"
-          target="_blank"
-        >
-          <img src="assets/fb2.png" alt="facebook icon"
-        /></a>
-      </div>
-    </nav>
-    <main>
-      <div class="name">
-        <h2 class="seven24">7/24</h2>
-        <div class="sportsclub">
-          <h1>TEAMVIBE</h1>
-          <h2>cyber sport club</h2>
-        </div>
-        <h2 class="seven24">7/24</h2>
-      </div>
-      <div class="slots">
-        <div class="slot-container">
-          <div class="free-slots flex-item">25</div>
-          <div class="flex-item"><i18n vanilla-i18n="form.slots"></i18n></div>
-          <div class="busy-slots flex-item">0</div>
-        </div>
-      </div>
-      <div id="info"></div>
-      <div class="info">
-        <div class="tabs">
-          <div class="tab">
-            <!-- contact -->
-            
-            <button
-              class="tablinks active top-tab1"
-              onclick="openTab(event, 'tab1')"
-            >
-              <a href="#info"><i18n vanilla-i18n="form.contact"></i18n></a>
-            </button>
-            <!-- about -->
-            <button class="tablinks top-tab2" onclick="openTab(event, 'tab2')">
-              <a href="#info"> <i18n vanilla-i18n="form.about"></i18n></a>
-            </button>
 
-            <!-- hardware -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Vibe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
+  <script>
+    const languages = ["Armenian", "English", "Russian"];
+    new vanilla_i18n(
+      languages,
+      (opts = {
+        path: "assets/vanilla-i18n/",
+        debug: false,
+        i18n_attr_name: "vanilla-i18n",
+        toggler_id: "vanilla-i18n-toggler",
+        default_language: languages[1],
+      })
+    ).run();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+  <meta name="description"
+    content="Присоединяйтесь к нашему клубу кибер гейминга и отправляйтесь в захватывающие виртуальные приключения. Участвуйте в интенсивных многопользовательских сражениях, покоряйте новые миры и заводите долгосрочные дружеские связи. Погрузитесь в мир передовых технологий игровой индустрии и раскройте свой конкурентный потенциал. Развивайте свои игровые навыки и доминируйте на виртуальной арене вместе с нашим сообществом страстных геймеров. Добро пожаловать в самый ультимативный опыт кибер гейминга!">
+  <meta name="keywords"
+    content="компьютерный клуб, ереван, cyber gaming, игровые технологии, гейминг, игровое сообщество, кибер-гейминг,gaming club, Yerevan, gaming tournaments, console gaming, PC gaming">
 
-            <button class="tablinks" onclick="openTab(event, 'tab3')">
-              <a href="#info"><i18n vanilla-i18n="form.hardware"></i18n></a>
-            </button>
-            <!-- prices -->
-            <button
-              class="tablinks bottom-tab"
-              onclick="openTab(event, 'tab4')"
-            >
-              <a href="#info"><i18n vanilla-i18n="form.price"></i18n></a>
-            </button>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="language">
+      <select class="language-select" id="vanilla-i18n-toggler">
+        <option class="am-option">Armenian</option>
+        <option class="en-option">English</option>
+        <option class="ru-option">Russian</option>
+      </select>
+    </div>
+    <div class="logo">
+      <div class="shadow">
+        <img src="assets/logo.png" alt="teamvibe Logo">
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://t.me/teamvibe_evn" target="_blank">
+        <img src="assets/tg2.png" alt="teamvibe telegram icon"></a>
+      <a href="https://www.instagram.com/teamvibe_evn/" target="_blank">
+        <img src="assets/ig2.png" alt="teamvibe instagram icon"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092512521095&mibextid=LQQJ4d" target="_blank">
+        <img src="assets/fb2.png" alt="teamvibe facebook icon"></a>
+    </div>
+  </nav>
+  <main>
+    <div class="name">
+      <h2 class="seven24">7/24</h2>
+      <div class="sportsclub">
+        <h1>TEAMVIBE</h1>
+        <h2>cyber sport club</h2>
+      </div>
+      <h2 class="seven24">7/24</h2>
+    </div>
+    <div class="slots">
+      <div class="slot-container">
+        <div class="free-slots flex-item">25</div>
+        <div class="flex-item">
+          <i18n vanilla-i18n="form.slots"></i18n>
+        </div>
+        <div class="busy-slots flex-item">0</div>
+      </div>
+    </div>
+    <div id="info"></div>
+    <div class="info">
+      <div class="tabs">
+        <div class="tab">
+          <!-- contact -->
+
+          <button class="tablinks active top-tab1" onclick="openTab(event, 'tab1')">
+            <a href="#info">
+              <i18n vanilla-i18n="form.contact"></i18n>
+            </a>
+          </button>
+          <!-- about -->
+          <button class="tablinks top-tab2" onclick="openTab(event, 'tab2')">
+            <a href="#info">
+              <i18n vanilla-i18n="form.about"></i18n>
+            </a>
+          </button>
+
+          <!-- hardware -->
+
+          <button class="tablinks" onclick="openTab(event, 'tab3')">
+            <a href="#info">
+              <i18n vanilla-i18n="form.hardware"></i18n>
+            </a>
+          </button>
+          <!-- prices -->
+          <button class="tablinks bottom-tab" onclick="openTab(event, 'tab4')">
+            <a href="#info">
+              <i18n vanilla-i18n="form.price"></i18n>
+            </a>
+          </button>
+        </div>
+        <div class="contents">
+          <!-- contact content -->
+          <div id="tab1" class="tabcontent active">
+            <a href="tel:+37491420344">+374 91 420 344</a>
+            <i18n vanilla-i18n="form.contact-content"></i18n>
+            <div class="wrapper">
+              <div class="map-container">
+                <button id="myLocationId">
+                  <img src="assets/crosshair.png" width="35" height="35"></button><br />
+                <button id="clubLocationId">
+                  <img src="assets/logo.png" width="35" height="35">
+                </button>
+                <div id="map">map</div>
+              </div>
+            </div>
           </div>
-          <div class="contents">
-            <!-- contact content -->
-            <div id="tab1" class="tabcontent active">
-              <a href="tel:+37491420344">+374 91 420 344</a>
-              <i18n vanilla-i18n="form.contact-content"></i18n>
-              <div class="wrapper">
-                <div class="map-container">
-                  <button id="myLocationId"><img src="assets/crosshair.png" width="35px" height= "35px"></button><br>
-                  <button id="clubLocationId"><img src="assets/logo.png" width="35px" height= "35px"></button>
-                  <div id="map">map</div>
-                  
-                </div>
+          <!-- about content-->
+          <div id="tab2" class="tabcontent">
+            <div class="pad">
+              <i18n vanilla-i18n="form.about-content"></i18n>
+            </div>
+          </div>
+          <!-- hardware content-->
+          <div id="tab3" class="tabcontent">
+            <i18n vanilla-i18n="form.hardware-content"></i18n>
+            <div class="hardware-packages">
+              <div class="standard">
+                <h3>STANDARD PC</h3>
+                <i18n vanilla-i18n="form.hardware-standard"></i18n>
+              </div>
+              <div class="vip">
+                <h3>VIP PC</h3>
+                <i18n vanilla-i18n="form.hardware-vip"></i18n>
               </div>
             </div>
-            <!-- about content-->
-            <div id="tab2" class="tabcontent">
-              <div class="pad">
-                <i18n vanilla-i18n="form.about-content"></i18n>
-              </div>
-            </div>
-            <!-- hardware content-->
-            <div id="tab3" class="tabcontent">
-              <i18n vanilla-i18n="form.hardware-content"></i18n>
-              <div class="hardware-packages">
-                <div class="standard">
-                  <h3>STANDARD PC</h3>
-                  <i18n vanilla-i18n="form.hardware-standard"></i18n>
-                </div>
-                <div class="vip">
-                  <h3>VIP PC</h3>
-                  <i18n vanilla-i18n="form.hardware-vip"></i18n>
-                </div>
-              </div>
-            </div>
-            <!-- prices content-->
-            <div id="tab4" class="tabcontent">
-              <div class="pad">
-                <i18n vanilla-i18n="form.price-content"></i18n>
-              </div>
+          </div>
+          <!-- prices content-->
+          <div id="tab4" class="tabcontent">
+            <div class="pad">
+              <i18n vanilla-i18n="form.price-content"></i18n>
             </div>
           </div>
         </div>
       </div>
-      <div class="pictures">
-        <div class="pic-pad"></div>
-        <div
-        class="slideshow cycle-slideshow"
-        data-cycle-timeout="2000"
-        data-cycle-fx="scrollHorz"
-        data-cycle-pause-on-hover="true"
-        data-cycle-prev="#prev"
-        data-cycle-next="#next"
-        >
-        <img src="assets/first-floor.PNG" alt="" />
-        <img src="assets/second-floor.PNG" alt="" />
-        <img src="assets/vip.PNG" alt="" />
-        <img src="assets/ps5.PNG" alt="" />
+    </div>
+    <div class="pictures">
+      <div class="pic-pad"></div>
+      <div class="slideshow cycle-slideshow" data-cycle-timeout="2000" data-cycle-fx="scrollHorz"
+        data-cycle-pause-on-hover="true" data-cycle-prev="#prev" data-cycle-next="#next">
+        <img src="assets/first-floor.PNG" alt="teamvibe first floor" />
+        <img src="assets/second-floor.PNG" alt="teamvibe second floor" />
+        <img src="assets/vip.PNG" alt="teamvibe vip room" />
+        <img src="assets/ps5.PNG" alt="teamvibe ps5" />
         <a href="#prev" id="prev">prev</a>
         <a href="#next" id="next">next</a>
-        </div>
       </div>
-    </main>
-    <footer>
-      <div class="address">
-        <a href="https://yandex.ru/maps/?rtext=~40.185469%2C44.524000"><i18n vanilla-i18n="form.address"></i18n></a>
-      </div>
-      <div class="social-links">
-        <a href="tel:+37491420344"
-          ><img src="assets/phone-icon.png" alt="phone-icon"
-        /></a>
-        <a href="https://t.me/teamvibe_evn" target="_blank">
-          <img src="assets/tg2.png" alt="telegram icon"
-        /></a>
-        <a href="https://www.instagram.com/teamvibe_evn/" target="_blank">
-          <img src="assets/ig2.png" alt="instagram icon"
-        /></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100092512521095&mibextid=LQQJ4d"
-          target="_blank"
-        >
-          <img src="assets/fb2.png" alt="facebook icon"
-        /></a>
-      </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+  </main>
+  <footer>
+    <div class="address">
+      <a href="https://yandex.ru/maps/?rtext=~40.185469%2C44.524000">
+        <i18n vanilla-i18n="form.address"></i18n>
+      </a>
+    </div>
+    <div class="social-links">
+      <a href="tel:+37491420344"><img src="assets/phone-icon.png" alt="teamvibe phone-icon"></a>
+      <a href="https://t.me/teamvibe_evn" target="_blank">
+        <img src="assets/tg2.png" alt="teamvibe telegram icon"></a>
+      <a href="https://www.instagram.com/teamvibe_evn/" target="_blank">
+        <img src="assets/ig2.png" alt="teamvibe instagram icon"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092512521095&mibextid=LQQJ4d" target="_blank">
+        <img src="assets/fb2.png" alt="teamvibe facebook icon"></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW16w63ffxzjTz5XvghnjvOCwlH8UBcU4&callback=initMap&v=weekly"
-      defer
-    ></script>
-  </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW16w63ffxzjTz5XvghnjvOCwlH8UBcU4&callback=initMap&v=weekly"
+    defer></script>
+</body>
+
 </html>
