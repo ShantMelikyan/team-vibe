@@ -399,18 +399,12 @@ button.active {
   content: "";
 }
 .pictures {
-  display: flex;
   overflow: hidden;
-}
-.slideshow {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
 }
 .slideshow img {
   object-fit: cover;
   float: left;
-
+  max-height: 100vh;
   width: 100%;
   height: 100%;
   overflow: hidden;
