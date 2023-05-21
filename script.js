@@ -1,5 +1,3 @@
-
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -12,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 function openTab(evt, tabName) {
   evt.preventDefault();
-  document.querySelector('#info').scrollIntoView({ behavior: 'smooth'});
+  document.querySelector("#info").scrollIntoView({ behavior: "smooth" });
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -57,7 +55,6 @@ let map;
 
 // populate styles array with styles from 'styles.json'
 
-
 function initMap() {
   //load map styles from json
   let styles = [];
@@ -70,7 +67,7 @@ function initMap() {
     },
   });
 
-  const myLatLng = { lat: 40.18537140704022, lng: 44.523966023346446 };
+  const clubLatLng = { lat: 40.18537140704022, lng: 44.523966023346446 };
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 17,
     center: new google.maps.LatLng(40.18537140704022, 44.523966023346446),
@@ -78,7 +75,7 @@ function initMap() {
     streetViewControl: false,
     mapTypeControl: false,
     keyboardShortcuts: false,
-     zoomControl: false,
+    zoomControl: false,
     fullscreenControl: false,
   });
   const icon = {
@@ -87,9 +84,9 @@ function initMap() {
     // origin: new google.maps.Point(0, 0), // origin
     // anchor: new google.maps.Point(0, 0), // anchor
   };
- 
+
   new google.maps.Marker({
-    position: myLatLng,
+    position: clubLatLng,
     map,
     title: "TEAM VIBE",
     icon: icon,
@@ -98,67 +95,51 @@ function initMap() {
       text: "TV",
     },
   });
-  // if (navigator.geolocation) {
-  //   navigator.geolocation.getCurrentPosition(function(position) {
-  //     var pos = {
-  //       lat: position.coords.latitude,
-  //       lng: position.coords.longitude
-  //     };
-
-  //     // Set the map center to the current location
-  //     map.setCenter(pos);
-
-  //     // Create a marker at the current location
-  //     let marker = new google.maps.Marker({
-  //       position: pos,
-  //       map: map,
-  //       icon: myLocationIcon,
-  //     });
-  //   }, function() {
-  //     handleLocationError(true, map.getCenter());
-  //   });
-  // }
-
- // Declare the marker variable outside the scope of the getCurrentPosition function
-
-
-
 }
-
 
 // Get a reference to the button element
 let button = document.getElementById("myLocationId");
-
+let button2 = document.getElementById("clubLocationId");
 
 // Add a click event listener to the button
-button.addEventListener("click", function() {
+button.addEventListener("click", function () {
   let marker;
-  const myLocationIcon = {
-    url: "/assets/crosshair.png", // url
-    scaledSize: new google.maps.Size(50, 50), // scaled size
-    // origin: new google.maps.Point(0, 0), // origin
-    // anchor: new google.maps.Point(0, 0), // anchor
-  };
+  let pos;
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
+    navigator.geolocation.getCurrentPosition(
+      function (position) {
+        pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+        const myLocationIcon = {
+          url: "/assets/crosshair.png", // url
+          scaledSize: new google.maps.Size(50, 50), // scaled size
+          anchor: new google.maps.Point(25, 25), // anchor
+        };
+        // Set the map center to the current location
+        map.setCenter(pos);
+  
 
-      // Set the map center to the current location
-      map.setCenter(pos);
-
-      // Create a marker at the current location
-      marker = new google.maps.Marker({
-        position: pos,
-        map: map,
-        icon: myLocationIcon,
-      });
-    }, function() {
-      handleLocationError(true, map.getCenter());
-    });
+        // Create a marker at the current location
+        marker = new google.maps.Marker({
+          position: pos,
+          map: map,
+          icon: myLocationIcon,
+        });
+      },
+      function () {
+        handleLocationError(true, map.getCenter());
+      }
+    );
   }
+});
+
+button2.addEventListener("click", function () {
+  const clubLatLng = { lat: 40.18537140704022, lng: 44.523966023346446 };
+  // Set the map center to the current location
+
+  map.setCenter(clubLatLng);
 });
 
 window.initMap = initMap;

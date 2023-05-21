@@ -346,22 +346,34 @@ button.active {
 
 #map {
   overflow: hidden;
-  margin-top: 30px;
+ 
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 501px;
   z-index: 0;
 }
-#myLocationId {
+.map-container{
+  position: relative;
+}
+#myLocationId, #clubLocationId{
+  margin-left: -20px;
+  margin-bottom: 10px;
   border-radius: 20px;
   height: 55px;
   width: 55px;
-  position: relative;
+  position: absolute;
   border-color: rgba(255, 255, 255, 0.158);
-  background-color: rgba(49, 49, 49, 0.39);
+  background-color: rgba(31, 27, 22, 0.801);
   z-index: 200;
-  top: 510px;
-  left: 40%;
+}
+
+#clubLocationId{
+  bottom: 90px;
+  left: 90%;
+}
+#myLocationId{
+  bottom: 20px;
+  left: 90%;
 }
 
 /************** info end ****************/
