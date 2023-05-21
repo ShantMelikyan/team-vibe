@@ -216,18 +216,21 @@ footer img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   align-content: center;
+  align-items: stretch;
 }
 .flex-item {
   flex: 1 1 0;
-  position: relative;
   text-align: center;
 }
 .flex-item + .flex-item {
   border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
-
+.middle{
+  padding: 0px 20px; 
+  line-height: 90%;
+}
 .free-slots {
   font-family: "Ballista";
   color: #0b7236;
