@@ -26,7 +26,6 @@ html {
 
 body {
   background-image: url("assets/background.svg");
-  backdrop-filter: blur(2px);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -88,6 +87,7 @@ footer,
 }
 
 select {
+  line-height: 0;
   border: none;
   width: 33px;
   height: 23px;
