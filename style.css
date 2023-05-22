@@ -392,7 +392,6 @@ button.active {
   overflow: hidden;
 }
 .slideshow img {
-  filter: blur(0.2px);
   object-fit: cover;
   float: left;
   max-height: 100vh;
