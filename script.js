@@ -113,7 +113,7 @@ button.addEventListener("click", function () {
           lng: position.coords.longitude,
         };
         const myLocationIcon = {
-          url: "/assets/crosshair.png", // url
+          url: "/assets/icons/crosshair.png", // url
           scaledSize: new google.maps.Size(50, 50), // scaled size
           anchor: new google.maps.Point(25, 25), // anchor
         };

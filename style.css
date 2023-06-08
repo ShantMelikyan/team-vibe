@@ -22,6 +22,7 @@ html {
   font-family: "Ballista";
   font-size: 16px;
   color: white;
+  color-scheme: dark;
 }
 
 body {
@@ -207,31 +208,36 @@ footer img {
   letter-spacing: 7px;
   font-size: 0.8rem;
 }
-
+/* *************** slots ************** */
 .slot-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  /* flex-flow: row wrap; */
   height: 60px;
   align-content: center;
-  align-items: stretch;
+  align-items: stretch
 }
 .flex-item {
   flex: 1 1 0;
+  padding-top: 20px;
   text-align: center;
+
 }
 .flex-item + .flex-item {
   border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
 .middle{
-  padding: 0px 20px; 
+  padding: 19px 20px 0 20px;
   line-height: 90%;
+  flex-wrap: nowrap;
 }
 .free-slots {
   font-family: "Ballista";
   color: #0b7236;
+
 }
-.busy-slots {
+.busy-slots { 
+  padding-top: 20px;
+  align-self: stretch;
   font-family: "Ballista";
   color: rgb(158, 44, 44);
 }
