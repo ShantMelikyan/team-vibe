@@ -276,7 +276,7 @@ footer img {
 }
 
 .tabs a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: inherit !important;
 }
 button {

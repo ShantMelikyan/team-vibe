@@ -40,13 +40,13 @@ selectElement.addEventListener("change", function () {
 
   // Update the background-image based on the selected option's class
   if (selectedOption.classList.contains("am-option")) {
-    svgElement.style.backgroundImage = 'url("assets/am.svg")';
+    svgElement.style.backgroundImage = 'url("assets/icons/am.svg")';
     htmlElement.style.fontFamily = "SosGro";
   } else if (selectedOption.classList.contains("en-option")) {
-    svgElement.style.backgroundImage = 'url("assets/gb.svg")';
+    svgElement.style.backgroundImage = 'url("assets/icons/gb.svg")';
     htmlElement.style.fontFamily = "Ballista";
   } else if (selectedOption.classList.contains("ru-option")) {
-    svgElement.style.backgroundImage = 'url("assets/ru.svg")';
+    svgElement.style.backgroundImage = 'url("assets/icons/ru.svg")';
     htmlElement.style.fontFamily = "Days2";
   }
 });
